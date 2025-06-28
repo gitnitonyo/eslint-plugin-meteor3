@@ -1,0 +1,23 @@
+{
+  "name": "eslint-plugin-meteor3",
+  "version": "1.0.0",
+  "description": "ESLint plugin for enforcing Meteor 3 API best practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "meteor",
+    "meteor3"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
