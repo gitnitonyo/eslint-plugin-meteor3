@@ -4,7 +4,9 @@
   "description": "ESLint plugin for enforcing Meteor 3 API best practices",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/rules/*.test.js",
+    "test:watch": "mocha tests/rules/*.test.js --watch",
+    "lint": "eslint ."
   },
   "keywords": [
     "eslint",
@@ -17,7 +19,20 @@
   "peerDependencies": {
     "eslint": ">=7.0.0"
   },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/eslint-parser": "^7.22.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/register": "^7.21.0",
+    "@types/eslint": "^8.4.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "mocha": "^10.0.0"
+  },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   }
 }
